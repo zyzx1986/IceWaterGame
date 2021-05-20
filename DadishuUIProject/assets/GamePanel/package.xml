@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="otw2and8">
+  <resources>
+    <component id="nd8g0" name="GamePanel.xml" path="/" exported="true"/>
+    <image id="nd8g1" name="bg.png" path="/image/"/>
+    <image id="nd8g2" name="personWet_0.png" path="/image/" exported="true"/>
+    <image id="nd8g3" name="personWet_1.png" path="/image/" exported="true"/>
+    <image id="nd8g4" name="personWet_2.png" path="/image/" exported="true"/>
+    <image id="nd8g5" name="person_0.png" path="/image/" exported="true"/>
+    <image id="nd8g6" name="person_1.png" path="/image/" exported="true"/>
+    <image id="nd8g7" name="person_2.png" path="/image/" exported="true"/>
+    <image id="nd8g8" name="water-full.png" path="/image/" exported="true"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

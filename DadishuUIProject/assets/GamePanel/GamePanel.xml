@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="640,1136">
+  <displayList>
+    <image id="n3_nd8g" name="n3" src="nd8g1" fileName="image/bg.png" xy="0,80" size="640,960"/>
+    <text id="n1_nd8g" name="countNum" xy="401,163" size="99,52" fontSize="30" align="center" vAlign="middle" autoSize="none" bold="true" text="11">
+      <relation target="n3_nd8g" sidePair="right-left,top-top"/>
+    </text>
+    <text id="n2_nd8g" name="txt_time" xy="98,124" size="161,42" fontSize="30" autoSize="none" bold="true" text="剩余：3秒">
+      <relation target="n3_nd8g" sidePair="left-left,top-top"/>
+    </text>
+    <loader id="n12_nd8g" name="load_1" xy="50,500" size="121,92" group="n15_nd8g"/>
+    <loader id="n13_nd8g" name="load_2" xy="263,503" size="121,92" group="n15_nd8g"/>
+    <loader id="n14_nd8g" name="load_3" xy="473,503" size="121,92" group="n15_nd8g"/>
+    <loader id="n16_nd8g" name="load_4" xy="50,659" size="121,92" group="n15_nd8g"/>
+    <loader id="n17_nd8g" name="load_5" xy="263,662" size="121,92" group="n15_nd8g"/>
+    <loader id="n18_nd8g" name="load_6" xy="473,662" size="121,92" group="n15_nd8g"/>
+    <loader id="n19_nd8g" name="load_7" xy="50,818" size="121,92" group="n15_nd8g"/>
+    <loader id="n20_nd8g" name="load_8" xy="263,821" size="121,92" group="n15_nd8g"/>
+    <loader id="n21_nd8g" name="load_9" xy="473,821" size="121,92" group="n15_nd8g"/>
+    <group id="n15_nd8g" name="n15" xy="50,500" size="544,413" advanced="true">
+      <relation target="n3_nd8g" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n29_nd8g" name="img_water" src="nd8g8" fileName="image/water-full.png" xy="294,255"/>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="Sound" value="ui://bcrr9om7nd8gm,100"/>
+  </transition>
+</component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="o2r3ig02">
+  <resources>
+    <component id="nd8g0" name="GameOver.xml" path="/" exported="true"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

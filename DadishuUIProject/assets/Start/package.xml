@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="bcrr9om7">
+  <resources>
+    <component id="otyd0" name="GameStart.xml" path="/" exported="true"/>
+    <image id="rryw1" name="bg.png" path="/image/"/>
+    <image id="rryw2" name="board2.png" path="/image/" exported="true"/>
+    <image id="rryw3" name="bucket.png" path="/image/"/>
+    <image id="rrywa" name="share_tip.png" path="/image/"/>
+    <image id="rrywb" name="start.jpg" path="/image/"/>
+    <component id="rrywd" name="btn_start.xml" path="/" exported="true"/>
+    <sound id="nd8gk" name="click.wav" path="/sound/"/>
+    <sound id="nd8gl" name="tabswitch.wav" path="/sound/"/>
+    <sound id="nd8gm" name="test.mp3" path="/sound/" exported="true"/>
+  </resources>
+  <publish name="Start"/>
+</packageDescription>

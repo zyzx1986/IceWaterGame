@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="640,1136">
+  <displayList>
+    <image id="n0_rryw" name="n0" src="rrywb" fileName="image/start.jpg" xy="0,80">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n1_rryw" name="btn_start" src="rrywd" fileName="btn_start.xml" xy="244,728" size="153,102" alpha="0">
+      <relation target="n0_rryw" sidePair="left-left,bottom-top"/>
+      <Button sound="ui://bcrr9om7nd8gk"/>
+    </component>
+  </displayList>
+  <transition name="t1">
+    <item time="0" type="Sound" value="ui://bcrr9om7nd8gm,100"/>
+  </transition>
+</component>

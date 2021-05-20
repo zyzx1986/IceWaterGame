@@ -1,0 +1,55 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,Start,Start_atlas0,Start_nd8gk,Start_nd8gm_mp3",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "assets/UI/Start.fui",
+			"type": "bin",
+			"name": "Start"
+		},
+		{
+			"url": "assets/UI/GamePanel.fui",
+			"type": "bin",
+			"name": "GamePanel"
+		},
+		{
+			"url": "assets/UI/GamePanel_atlas0.png",
+			"type": "image",
+			"name": "GamePanel_atlas0"
+		},
+		{
+			"url": "assets/UI/GameOverPanel.fui",
+			"type": "bin",
+			"name": "GameOverPanel"
+		},
+		{
+			"url": "assets/UI/Start_atlas0.png",
+			"type": "image",
+			"name": "Start_atlas0"
+		},
+		{
+			"url": "assets/UI/Start_nd8gk.wav",
+			"type": "sound",
+			"name": "Start_nd8gk"
+		},
+		{
+			"name": "Start_nd8gm_mp3",
+			"type": "sound",
+			"url": "assets/UI/Start_nd8gm.mp3"
+		}
+	]
+}

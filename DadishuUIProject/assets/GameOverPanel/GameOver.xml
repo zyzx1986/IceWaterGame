@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="640,1136">
+  <displayList>
+    <image id="n0_nd8g" name="n0" src="rryw2" fileName="image/board2.png" pkg="bcrr9om7" xy="0,80"/>
+    <text id="n1_nd8g" name="txt_score" xy="212,356" size="214,87" fontSize="30" align="center" vAlign="middle" autoSize="none" bold="true" text="得分：15">
+      <relation target="n0_nd8g" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n3_nd8g" name="btn_again" src="rrywd" fileName="btn_start.xml" pkg="bcrr9om7" xy="108,542" size="425,85" alpha="0">
+      <relation target="n0_nd8g" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n4_nd8g" name="btn_share" src="rrywd" fileName="btn_start.xml" pkg="bcrr9om7" xy="111,701" size="425,85" alpha="0">
+      <relation target="n0_nd8g" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>
