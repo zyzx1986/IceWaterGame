@@ -36,6 +36,8 @@ class GamePanel {
 			this._arr.push(tempLoad);
 		}
 
+		console.log("this.arr len=="+this._arr.length);
+
 
 		this._waterImage = this._view.getChild("img_water").asImage;
 		this._waterImage.visible = false;
