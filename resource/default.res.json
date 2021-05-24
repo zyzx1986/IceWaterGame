@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,Start,Start_atlas0,Start_nd8gk,Start_nd8gm",
+			"keys": "bg_jpg,egret_icon_png,Start,Start_atlas0,Start_nd8gk,Start_nd8gm,GameOverPanel_atlas0",
 			"name": "preload"
 		}
 	],
@@ -50,6 +50,11 @@
 			"url": "assets/UI/Start_nd8gm.mp3",
 			"type": "sound",
 			"name": "Start_nd8gm"
+		},
+		{
+			"url": "assets/UI/GameOverPanel_atlas0.png",
+			"type": "image",
+			"name": "GameOverPanel_atlas0"
 		}
 	]
 }

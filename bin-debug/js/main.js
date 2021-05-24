@@ -361,6 +361,7 @@ __reflect(LoadingUI.prototype,"LoadingUI",["RES.PromiseTaskReporter"]);
 __webpack_require__("./src/LoadingUI.ts");
 __webpack_require__("./src/Main.ts");
 __webpack_require__("./src/Platform.ts");
+__webpack_require__("./src/game/GameLuck.ts");
 __webpack_require__("./src/game/GameOver.ts");
 __webpack_require__("./src/game/GamePanel.ts");
 __webpack_require__("./src/game/GameUtil.ts");
@@ -628,6 +629,42 @@ if (!window.platform) {
 
 /***/ }),
 
+/***/ "./src/game/GameLuck.ts":
+/***/ (function(module, exports) {
+
+var GameLuck = /** @class */ (function (_super) {
+    __extends(GameLuck, _super);
+    function GameLuck() {
+        return _super.call(this) || this;
+    }
+    GameLuck.prototype.onInit = function () {
+        this.contentPane = fgui.UIPackage.createObject("GameOverPanel", "LuckWin").asCom;
+        this.center();
+    };
+    GameLuck.prototype.onShown = function () {
+        // var list: fgui.GList = this.contentPane.getChild("list").asList;
+        // list.addEventListener(fgui.ItemEvent.CLICK, this.onClickItem, this);
+        // list.itemRenderer = this.renderListItem;
+        // list.callbackThisObj = this;
+        // list.setVirtual();
+        // list.numItems = 45;
+    };
+    GameLuck.prototype.renderListItem = function (index, obj) {
+        obj.icon = "resource/assets/Icons/i" + Math.floor(Math.random() * 10) + ".png";
+        obj.text = "" + Math.floor(Math.random() * 100);
+    };
+    GameLuck.prototype.onClickItem = function (evt) {
+        this.contentPane.getChild("n11").asLoader.url = evt.itemObject.icon;
+        this.contentPane.getChild("n13").text = evt.itemObject.icon;
+    };
+    return GameLuck;
+}(fgui.Window));
+window["GameLuck"] = GameLuck;
+__reflect(GameLuck.prototype,"GameLuck",[]); 
+
+
+/***/ }),
+
 /***/ "./src/game/GameOver.ts":
 /***/ (function(module, exports) {
 
@@ -652,8 +689,10 @@ var GameOver = /** @class */ (function () {
                             fgui.GRoot.inst.dispatchEventWith("start_", false, null);
                             fgui.GRoot.inst.removeChild(_this._view);
                         }, this);
+                        this._luckWindow = new GameLuck();
                         this._view.getChild("btn_share").addClickListener(function () {
                             console.log("点击分享");
+                            _this._luckWindow.show();
                         }, this);
                         return [2 /*return*/];
                 }
@@ -705,6 +744,7 @@ var GamePanel = /** @class */ (function () {
                             tempLoad = this._view.getChild("load_" + (i + 1)).asLoader;
                             this._arr.push(tempLoad);
                         }
+                        console.log("this.arr len==" + this._arr.length);
                         this._waterImage = this._view.getChild("img_water").asImage;
                         this._waterImage.visible = false;
                         this._tran = this._view.getTransition("t0");
@@ -714,10 +754,10 @@ var GamePanel = /** @class */ (function () {
         });
     };
     GamePanel.prototype.playSound = function () {
+        //方法1 通过音频放UI里   通过动效的没法停止音乐
+        // this._tran.play();
         var _this = this;
-        //方法1 通过音频放UI里
-        this._tran.play();
-        return;
+        // return;
         //方法2 通过sound load
         this._sound = new egret.Sound();
         this._sound.load("resource/assets/UI/aaaaaa.mp3");
@@ -827,7 +867,8 @@ var GamePanel = /** @class */ (function () {
         // }
     };
     GamePanel.prototype.resetCount = function () {
-        this.countTime = 30;
+        // this.countTime = 30;
+        this.countTime = 5;
     };
     GamePanel.prototype.setTimeTxt = function (count) {
         this._timeTxt.text = "剩余" + count + "秒";

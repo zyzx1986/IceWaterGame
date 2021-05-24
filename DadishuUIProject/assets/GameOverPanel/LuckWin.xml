@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="615,387">
+  <displayList>
+    <component id="n0_nd8g" name="frame" src="nd8gb" fileName="WindowFrame.xml" xy="0,0"/>
+    <component id="n1_nd8g" name="btn_luck" src="nd8gf" fileName="Button1.xml" xy="246,338"/>
+    <graph id="n2_nd8g" name="n2" xy="158,60" size="260,260" type="eclipse" lineColor="#ffff0000" fillColor="#ff666600"/>
+  </displayList>
+</component>

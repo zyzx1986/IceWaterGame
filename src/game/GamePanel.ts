@@ -187,7 +187,8 @@ class GamePanel {
 
 
 	private resetCount() {
-		this.countTime = 30;
+		// this.countTime = 30;
+		this.countTime = 5;
 	}
 
 	private setTimeTxt(count: number) {

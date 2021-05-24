@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="85,25" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_nd8g" name="n0" src="nd8gd" fileName="image/b5_png.png" xy="0,0">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_nd8g" name="n1" src="nd8ge" fileName="image/b6_png.png" xy="0,0">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2_nd8g" name="n2" xy="1,0" size="84,26" fontSize="18" align="center" autoSize="none" text="抽奖"/>
+  </displayList>
+  <Button/>
+</component>

@@ -5,14 +5,26 @@
   "auxline1": true,
   "canvasColor": 10066329,
   "auxline2": true,
-  "doc.activeDoc": "ui://bcrr9om7otyd0",
+  "doc.activeDoc": "ui://o2r3ig02nd8ga",
   "libview.twoColumn": false,
   "libview.expandedNodes": [
+    "o2r3ig02",
+    "/",
+    "o2r3ig02",
+    "/image/",
+    "otw2and8",
+    "/",
     "bcrr9om7",
     "/"
   ],
   "doc.openedDocs": [
-    "ui://bcrr9om7otyd0"
+    "ui://bcrr9om7otyd0",
+    "ui://otw2and8nd8g0",
+    "ui://o2r3ig02nd8g0",
+    "ui://o2r3ig02nd8ga",
+    "ui://o2r3ig02nd8gf",
+    "ui://o2r3ig02nd8gb",
+    "ui://o2r3ig02nd8gc"
   ],
   "snapToGrid": true,
   "gridColor": 80,

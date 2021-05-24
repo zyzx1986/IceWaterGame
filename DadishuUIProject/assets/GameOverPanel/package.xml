@@ -2,6 +2,24 @@
 <packageDescription id="o2r3ig02">
   <resources>
     <component id="nd8g0" name="GameOver.xml" path="/" exported="true"/>
+    <image id="nd8g8" name="0.png" path="/image/"/>
+    <image id="nd8g9" name="5.png" path="/image/"/>
+    <component id="nd8ga" name="LuckWin.xml" path="/" exported="true"/>
+    <component id="nd8gb" name="WindowFrame.xml" path="/" exported="true"/>
+    <component id="nd8gc" name="closeBtn.xml" path="/" exported="true"/>
+    <image id="nd8gd" name="b5_png.png" path="/image/"/>
+    <image id="nd8ge" name="b6_png.png" path="/image/"/>
+    <component id="nd8gf" name="Button1.xml" path="/"/>
+    <image id="nd8gg" name="ct.png" path="/image/" exported="true"/>
+    <image id="nd8gh" name="hua.png" path="/image/" exported="true"/>
+    <image id="nd8gi" name="jct.png" path="/image/" exported="true"/>
+    <image id="nd8gj" name="lj.png" path="/image/" exported="true"/>
+    <image id="nd8gk" name="mg.png" path="/image/" exported="true"/>
+    <image id="nd8gl" name="my.png" path="/image/" exported="true"/>
+    <image id="nd8gm" name="xg.png" path="/image/" exported="true"/>
+    <image id="nd8gn" name="xr.png" path="/image/" exported="true"/>
+    <image id="nd8go" name="yy.png" path="/image/" exported="true"/>
+    <image id="nd8gp" name="zs.png" path="/image/" exported="true"/>
   </resources>
   <publish name=""/>
 </packageDescription>

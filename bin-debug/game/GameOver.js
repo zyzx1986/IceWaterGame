@@ -57,8 +57,10 @@ var GameOver = (function () {
                             fgui.GRoot.inst.dispatchEventWith("start_", false, null);
                             fgui.GRoot.inst.removeChild(_this._view);
                         }, this);
+                        this._luckWindow = new GameLuck();
                         this._view.getChild("btn_share").addClickListener(function () {
                             console.log("点击分享");
+                            _this._luckWindow.show();
                         }, this);
                         return [2 /*return*/];
                 }

@@ -70,16 +70,21 @@ var GamePanel = (function () {
                             tempLoad = this._view.getChild("load_" + (i + 1)).asLoader;
                             this._arr.push(tempLoad);
                         }
+                        console.log("this.arr len==" + this._arr.length);
                         this._waterImage = this._view.getChild("img_water").asImage;
                         this._waterImage.visible = false;
+                        this._tran = this._view.getTransition("t0");
                         return [2 /*return*/];
                 }
             });
         });
     };
     GamePanel.prototype.playSound = function () {
-        var _this = this;
+        //方法1 通过音频放UI里   通过动效的没法停止音乐
         // this._tran.play();
+        var _this = this;
+        // return;
+        //方法2 通过sound load
         this._sound = new egret.Sound();
         this._sound.load("resource/assets/UI/aaaaaa.mp3");
         this._sound.addEventListener(egret.Event.COMPLETE, function () {
@@ -188,7 +193,8 @@ var GamePanel = (function () {
         // }
     };
     GamePanel.prototype.resetCount = function () {
-        this.countTime = 30;
+        // this.countTime = 30;
+        this.countTime = 5;
     };
     GamePanel.prototype.setTimeTxt = function (count) {
         this._timeTxt.text = "剩余" + count + "秒";

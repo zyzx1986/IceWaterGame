@@ -3,6 +3,7 @@ class GameOver{
 
     private _view:fgui.GComponent;
     private _score:fgui.GTextField;
+    private _luckWindow: fgui.Window;
     public constructor(){
 
     }
@@ -22,8 +23,13 @@ class GameOver{
             fgui.GRoot.inst.dispatchEventWith("start_", false, null);
             fgui.GRoot.inst.removeChild(this._view);
         },this);
+
+
+        this._luckWindow = new GameLuck();
+
         this._view.getChild("btn_share").addClickListener(()=>{
             console.log("点击分享")
+            this._luckWindow.show();
         },this);
 
     }
